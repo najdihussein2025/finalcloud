@@ -1,0 +1,66 @@
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+}
+
+<div class="row justify-content-center">
+    <div class="col-md-10 col-lg-8">
+        <div class="card shadow-sm border-0">
+            <div class="card-header bg-gradient-primary text-white">
+                <h4 class="mb-0">
+                    <i class="fas fa-shield-alt me-2"></i>Privacy Policy
+                </h4>
+            </div>
+            <div class="card-body p-4">
+                <h2 class="fw-bold mb-4">@ViewData["Title"]</h2>
+                
+                <div class="privacy-content">
+                    <p class="lead mb-4">
+                        Your privacy is important to us. This privacy policy explains how we collect, use, and protect your personal information.
+                    </p>
+
+                    <h5 class="fw-bold mt-4 mb-3">
+                        <i class="fas fa-info-circle text-primary me-2"></i>Information We Collect
+                    </h5>
+                    <p class="mb-3">
+                        We collect information that you provide directly to us, including:
+                    </p>
+                    <ul class="mb-4">
+                        <li>Name and contact information</li>
+                        <li>Email address</li>
+                        <li>Any other information you choose to provide</li>
+                    </ul>
+
+                    <h5 class="fw-bold mt-4 mb-3">
+                        <i class="fas fa-lock text-primary me-2"></i>How We Use Your Information
+                    </h5>
+                    <p class="mb-3">
+                        We use the information we collect to:
+                    </p>
+                    <ul class="mb-4">
+                        <li>Provide and maintain our services</li>
+                        <li>Improve user experience</li>
+                        <li>Communicate with you about our services</li>
+                    </ul>
+
+                    <h5 class="fw-bold mt-4 mb-3">
+                        <i class="fas fa-shield-alt text-primary me-2"></i>Data Security
+                    </h5>
+                    <p class="mb-4">
+                        We implement appropriate security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction.
+                    </p>
+
+                    <div class="alert alert-info mt-4">
+                        <i class="fas fa-calendar me-2"></i>
+                        <strong>Last Updated:</strong> @DateTime.Now.ToString("MMMM dd, yyyy")
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <a asp-action="Index" class="btn btn-primary">
+                        <i class="fas fa-arrow-left me-2"></i>Back to Home
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
